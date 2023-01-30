@@ -7,6 +7,8 @@
     width:60px;
     height:100vh;
     text-align:center;
+    font-weight:bold;
+    color:#fff;
 }
 .sidebar img{
     width:50px;
@@ -20,6 +22,43 @@
     transition-duration: .3s;
     border-radius: 40%;
 }
+
+
+
+.tooltip{
+    position: relative;
+    cursor: pointer;
+}
+.tooltext{
+    display: none;
+    position: absolute;
+    margin:10% 0;
+    padding: 20%;
+    font-size: 12px;
+    line-height: 1.6em;
+    border-radius: 5px;
+    background: #202225;
+    height:20px;
+    width: 100px;
+}
+.tooltext:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 95%;
+    border: 15px solid transparent;
+    border-top: 15px solid #202225;
+    margin-left: -15px;
+    transform: rotateZ(90deg);
+}
+.tooltip:hover .tooltext{
+    display: block;
+    top: 0px;
+    left: 80px;
+}
+
+
+
 
 .main{
     background-color: #36393f;
