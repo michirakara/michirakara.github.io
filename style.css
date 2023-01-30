@@ -1,0 +1,26 @@
+.sidebar{
+    background-color: #202225;
+    width:60px;
+    height:100vh;
+    text-align:center;
+}
+.sidebar img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    margin:10% 0;
+    border-radius: 50%;
+    transition-duration: .3s;
+}
+.sidebar img:hover{
+    transition-duration: .3s;
+    border-radius: 40%;
+}
+
+.main{
+    background-color: #36393f;
+    flex-grow:3;
+}
+body{
+    display:flex;
+}
