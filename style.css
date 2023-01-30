@@ -74,6 +74,7 @@ a:hover{
 
 
 .menu{
+    color:white;
     width:210px;
     background-color: #2f3136;
 }
@@ -96,6 +97,7 @@ a:hover{
 }
 
 .main{
+    color:white;
     background-color: #36393f;
     flex-grow:3;
 }
