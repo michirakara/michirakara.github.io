@@ -22,5 +22,6 @@
     flex-grow:3;
 }
 body{
+    width:100%;
     display:flex;
 }
