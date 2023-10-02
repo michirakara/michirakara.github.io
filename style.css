@@ -105,6 +105,34 @@ a:hover{
     background-color: #36393f;
     flex-grow:3;
 }
+.main h1{
+    width:fit-content;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
+    border-bottom-width: 2px;
+    border-bottom-style:solid;
+    border-bottom-color:white;
+}
+.main p{
+    margin:10px;
+}
+.main .dajare{
+    font-size:30px;
+}
+.main .rainbow{
+    /* フォントサイズなど任意指定 */
+    /* 背景グラデーションを指定・幅を 200% にしておく */
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* アニメーション指定 */
+    animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow{
+    to {background-position-x: 200%;}
+}
 body{
     display:flex;
 }
