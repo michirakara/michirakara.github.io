@@ -27,6 +27,7 @@ function SimonetaGacha(){
     }else{
         str+="下ネタガチャで下ネタが出ませんでした…";
     }
+    str+="あなたも下ネタガチャで遊ぼう！";
     console.log(str);
     share.setAttribute('href',str);
 }
@@ -47,7 +48,7 @@ function TenRenSimonetaGacha(){
 
     let share=document.getElementById("twitter-share-button");
     let str="https://twitter.com/share?url=michirakara.github.io&text=";
-    str+="10連下ネタガチャの結果..."+score.toString()+"ちんこでした！"
+    str+="10連下ネタガチャの結果..."+score.toString()+"ちんこでした！"+"あなたも下ネタガチャで遊ぼう！";
     console.log(str);
     share.setAttribute('href',str);
 }
