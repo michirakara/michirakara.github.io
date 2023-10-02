@@ -12,16 +12,42 @@ function InternalGacha(){
 function SimonetaGacha(){
     let elem = document.createElement("div");
     elem.id="simoneta-result";
-    elem.appendChild(InternalGacha());
+    elem.classList.add("one-ren");
+
+    let result=InternalGacha();
+    elem.appendChild(result);
+    
     let tobe=document.getElementById("simoneta-result");
     tobe.replaceWith(elem);
+
+    let share=document.getElementById("twitter-share-button");
+    let str="https://twitter.com/share?url=michirakara.github.io&text=";
+    if(result.classList.contains("success")){
+        str+="ち　ん　こ　だ　ぁ　！";
+    }else{
+        str+="下ネタガチャで下ネタが出ませんでした…";
+    }
+    console.log(str);
+    share.setAttribute('href',str);
 }
 function TenRenSimonetaGacha(){
     let elem = document.createElement("div");
     elem.id="simoneta-result";
+    elem.classList.add("ten-ren");
+
+    let score=0;
+
     for(var i=0;i<10;i++){
-        elem.appendChild(InternalGacha());
+        let result = InternalGacha();
+        elem.appendChild(result);
+        if(result.classList.contains("success"))score++;
     }
     let tobe=document.getElementById("simoneta-result");
     tobe.replaceWith(elem);
+
+    let share=document.getElementById("twitter-share-button");
+    let str="https://twitter.com/share?url=michirakara.github.io&text=";
+    str+="10連下ネタガチャの結果..."+score.toString()+"ちんこでした！"
+    console.log(str);
+    share.setAttribute('href',str);
 }
