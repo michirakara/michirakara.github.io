@@ -121,7 +121,6 @@ a:hover{
     font-size:30px;
 }
 .main .rainbow{
-    /* フォントサイズなど任意指定 */
     /* 背景グラデーションを指定・幅を 200% にしておく */
     background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
     background-clip: text;
@@ -130,9 +129,31 @@ a:hover{
     /* アニメーション指定 */
     animation: rainbow 3s linear infinite;
 }
+.main button{
+    margin: 10px;
+    height: 70px;
+    width:320px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+    animation: rainbow 3s linear infinite;
+}
+.main .success{
+    font-size:50px;
+    /* 背景グラデーションを指定・幅を 200% にしておく */
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* アニメーション指定 */
+    animation: rainbow 0.3s linear infinite;
+}
 @keyframes rainbow{
     to {background-position-x: 200%;}
 }
+
 body{
     display:flex;
 }
