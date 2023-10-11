@@ -16,10 +16,16 @@ a:hover{
     font-weight: bold;
 }
 
+.flexbox-container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items:stretch;
+}
+
 .sidebar{
     background-color: #202225;
     width:70px;
-    height:100vh;
     text-align:center;
     font-weight:bold;
     color:#fff;
